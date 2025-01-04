@@ -1,0 +1,142 @@
+<!-- Write an HTML code to demonstrate the cellspacing and cellpadding in tables  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example 2</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 50%;
+                text-align: center;
+            }
+
+            th,
+            td {
+                border: 1px solid black;
+                padding: 10px 10px;
+            }
+
+            .tab {
+                border-collapse: collapse;
+                width: 30%;
+                text-align: center;
+            }
+
+            .tab th,
+            td {
+                border: 1px solid black;
+                padding: 10px 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Dummy Data Tables</h1>
+
+        <table border="1">
+            <th>EMAIL</th>
+            <th>TOBIAS</th>
+            <th>LINUS</th>
+
+            <tr>
+                <td>8:00 AM</td>
+                <td>8:00 AM</td>
+                <td>8:00 AM</td>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>9:00 AM</td>
+                <td>9:00 AM</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>10:00 AM</td>
+                <td>10:00 AM</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>11:00 AM</td>
+                <td>11:00 AM</td>
+            </tr>
+            <tr>
+                <td>12:00 AM</td>
+                <td>12:00 AM</td>
+                <td>12:00 AM</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table border="1">
+            <th>8:00</th>
+            <th>9:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+            <th>13:00</th>
+
+            <tr>
+                <td>Meeting</td>
+                <td>Project</td>
+                <td>Lunch</td>
+                <td>Meeting</td>
+                <td>Task</td>
+                <td>Break</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table border="1">
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+
+            <tr>
+                <td>8:00</td>
+                <td>9:00</td>
+                <td>10:00</td>
+                <td>11:00</td>
+                <td>12:00</td>
+            </tr>
+
+            <tr>
+                <td>Team</td>
+                <td>Work</td>
+                <td>Call</td>
+                <td>Report</td>
+                <td>Review</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table border="1" class="tab">
+            <th colspan="2">DECEMBER</th>
+
+            <tr>
+                <td>1st Week</td>
+                <td>Tasks</td>
+            </tr>
+            <tr>
+                <td>2nd Week</td>
+                <td>Meeting</td>
+            </tr>
+            <tr>
+                <td>3rd Week</td>
+                <td>Project</td>
+            </tr>
+            <tr>
+                <td>4th Week</td>
+                <td>Report</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
