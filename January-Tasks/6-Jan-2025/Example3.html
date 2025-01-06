@@ -1,0 +1,153 @@
+<!-- 
+Write an HTML and CSS to demonstrate the different border styles in css 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div:nth-child(3) p {
+                border: 2px dotted;
+            }
+
+            div:nth-child(4) p {
+                border: 2px dashed;
+            }
+
+            div:nth-child(5) p {
+                border: 2px solid;
+            }
+
+            div:nth-child(6) p {
+                border: 2px double;
+            }
+
+            div:nth-child(7) p {
+                border: 2px groove;
+            }
+
+            div:nth-child(8) p {
+                border: 2px ridge;
+            }
+
+            div:nth-child(9) p {
+                border: 2px inset;
+            }
+
+            div:nth-child(10) p {
+                border: 2px outset;
+            }
+
+            div:nth-child(11) p {
+                border: 2px dotted;
+            }
+
+            div:nth-child(12) p {
+                border: none;
+            }
+
+            div:nth-child(13) p {
+                border: hidden;
+            }
+
+            div:nth-child(14) p {
+                border-top-style: dotted;
+                border-right-style: dashed;
+                border-bottom-style: solid;
+                border-left-style: double;
+            }
+
+            #p1 {
+                border: 2px solid red;
+                border-radius: 0px;
+            }
+
+            #p2 {
+                border: 2px solid red;
+                border-radius: 5px;
+            }
+
+            #p3 {
+                border: 2px solid red;
+                border-radius: 8px;
+            }
+
+            #p4 {
+                border: 2px solid red;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>The border-style Property</h1>
+        <p>This property specifies what kind of border to display:</p>
+
+        <div>
+            <p>A dotted border.</p>
+        </div>
+        <div>
+            <p>A dashed border.</p>
+        </div>
+        <div>
+            <p>A solid border.</p>
+        </div>
+        <div>
+            <p>A double border.</p>
+        </div>
+        <div>
+            <p>A groove border.</p>
+        </div>
+        <div>
+            <p>A ridge border.</p>
+        </div>
+        <div>
+            <p>An inset border.</p>
+        </div>
+        <div>
+            <p>An outset border.</p>
+        </div>
+        <div>
+            <p>A dotted border.</p>
+        </div>
+        <div>
+            <p>No border.</p>
+        </div>
+        <div>
+            <p>A hidden border.</p>
+        </div>
+        <div>
+            <p>A mixed border.</p>
+        </div>
+
+        <h1>The border-width Property</h1>
+
+        <p>This Property specifies the width of the four borders</p>
+
+        <p style="border:5px solid">Some text.</p>
+        <p style="border:2px solid">Some text.</p>
+        <p style="border:1.5px dotted">Some text.</p>
+        <p style="border:5px dotted">Some text.</p>
+        <p style="border:10px double">Some text.</p>
+        <p style="border:6px double">Some text.</p>
+
+        <h1>The border-color Property</h1>
+
+        <p style="border:2px solid red;">A solid red border</p>
+        <p style="border: 2px solid green;">A solid green border</p>
+        <p style="border: 2px dotted blue;">A dotted blue border</p>
+
+        <h1>The border-radius Property</h1>
+        <p>This property is used to add rounded borders to an element:</p>
+
+        <p id="p1">Normal border</p>
+        <p id="p2">Round border</p>
+        <p id="p3">Rounder border</p>
+        <p id="p4">Roundest border</p>
+    </body>
+
+</html>
