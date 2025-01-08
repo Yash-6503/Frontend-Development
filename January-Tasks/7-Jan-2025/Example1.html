@@ -1,0 +1,62 @@
+<!-- Write an CSS to demonstrate the color gradients in CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exmaple 1</title>
+        <style>
+            .box1 {
+                height: 100px;
+                background: linear-gradient(red, yellow, green);
+            }
+
+            .box2 {
+                height: 100px;
+                background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+            }
+
+            .box3 {
+                height: 100px;
+                background: linear-gradient(red 10%, green 80%, blue 90%);
+            }
+
+            .box4 {
+                /* height: 50px; */
+                background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+                margin: 5px;
+                text-align: center;
+                color: gray;
+            }
+
+            .box5 {
+                height: 150px;
+                width: 200px;
+                background-image: radial-gradient(circle, red, yellow, green);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Linear Gradients - Multiple Color Stops</h1>
+        <p>Note: Color stops are spaced evenly when no percents are specified.</p>
+
+        <h1>3 Color Stops (evenly spaced):</h1>
+        <div class="box1"></div>
+
+        <h1>7 Color Stops (evenly spaced):</h1>
+        <div class="box2"></div>
+
+        <h1>3 Color Stops (not evenly spaced):</h1>
+        <div class="box3"></div>
+        <div class="box4">
+            <h2>Rainbow Background</h2>
+        </div>
+
+        <h1>Radial Gradient - Evenly Spaced Color Stops</h1>
+        <div class="box5"></div>
+    </body>
+
+</html>
