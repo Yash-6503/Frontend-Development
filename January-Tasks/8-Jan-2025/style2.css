@@ -1,0 +1,25 @@
+.box1 {
+    background-color: seagreen;
+    height: 100px;
+    width: 250px;
+    text-align: center;
+    color: white;
+}
+
+.box2 {
+    background-color: coral;
+    width: 700px;
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+    padding: 10px 0px;
+}
+
+.box3 {
+    background-color: rgb(2, 92, 181);
+    height: 150px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
