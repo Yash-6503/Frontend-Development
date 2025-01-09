@@ -1,0 +1,47 @@
+ .header {
+     border: 2px solid red;
+     text-align: center;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+ }
+
+ .container {
+     border: 2px solid red;
+     display: flex;
+     height: 500px;
+     padding: 1px;
+     gap: 2px;
+     margin: 2px 0px;
+     padding: 2px;
+ }
+
+ .nav {
+     border: 2px solid blue;
+     text-align: center;
+     width: 20%;
+ }
+
+ .flexbox {
+     border: 2px solid blue;
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     flex-wrap: wrap;
+     padding: 10px 5px;
+
+ }
+
+ .box1 {
+     border: 2px solid red;
+     text-align: center;
+     height: 150px;
+     width: 150px;
+     border-radius: 5px;
+ }
+
+ .footer {
+     border: 2px solid grey;
+     text-align: center;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+ }
