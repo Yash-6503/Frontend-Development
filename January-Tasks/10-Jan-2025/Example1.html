@@ -1,0 +1,53 @@
+<!-- Write an CSS to demonstrate different types of text-shadows in CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example 1</title>
+        <style>
+            body {
+                text-align: center;
+            }
+
+            h1:nth-child(1) {
+                text-shadow: 0px 2px 3px grey;
+
+            }
+
+            h1:nth-child(2) {
+                text-shadow: 1px 4px 10px rgb(0, 0, 0, 1);
+            }
+
+            h1:nth-child(3) {
+                text-shadow: 1px 2px 3px orangered, 1px -1px 6px blue;
+            }
+
+            h1:nth-child(4) {
+                color: white;
+                text-shadow:
+                    0 0 10px rgb(255, 0, 179),
+                    0 0 20px rgb(255, 0, 179),
+                    0 0 30px rgb(255, 0, 179),
+                    0 0 100px rgb(255, 0, 179);
+            }
+
+            h1:nth-child(5) {
+                color: white;
+                background-color: grey;
+                text-shadow: 0px 0px 10px white inset;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Simple Text Shadow</h1>
+        <h1>Blurred Test Shadow</h1>
+        <h1>Multiple Shadows</h1>
+        <h1>Glowing Effect</h1>
+        <h1>Inset Shadow</h1>
+    </body>
+
+</html>
