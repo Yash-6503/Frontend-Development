@@ -1,3 +1,6 @@
+JavaScript Questions to Solve
+------------------------------------------
+
 Que 1 :  Write a 'JavaScript' program to print student details using console.log() function only.
 -------
 
