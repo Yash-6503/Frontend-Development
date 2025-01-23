@@ -135,7 +135,7 @@ Sample Output:
 
 ========================================================================================================       
     
-Que 9 : Write a C program that takes an integer as input and checks if it is a positive, negative, or zero. 
+Que 9 : Write a JavaScript program that takes an integer as input and checks if it is a positive, negative, or zero. 
 ------- Display the appropriate message as output using the ternary operator.
     
 
