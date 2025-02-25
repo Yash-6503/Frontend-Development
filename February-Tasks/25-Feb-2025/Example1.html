@@ -1,0 +1,87 @@
+<!-- 
+Write a 'JavaScript' program that takes a month number (1-12) as input from the user and prints 
+the number of days in that month using a switch statement.  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example1</title>
+
+</head>
+<body style="text-align: center;">
+    <h3>Check Month Days based on month</h3>
+    <div>
+        <label for="mon">Enter Month: </label>
+        <input type="text" id="ip" placeholder="Enter month number"> 
+        <button onclick="checkMonthDays()">Submit</button>
+    </div>
+    <br>
+    <Output id="ans"></Output>
+
+
+    <script>
+        
+        function checkMonthDays(){
+            let month = +document.getElementById("ip").value;
+            // let month = +ip.value;
+            
+            switch(month){
+                case 1:
+                    ans.value = "January Month has 31 days";
+                    break;
+
+                case 2:
+                    ans.value = "February Month has 28 or 29 days (depending on leap year)";
+                    break;
+
+                case 3:
+                    ans.value = "March Month has 31 days";
+                    break;
+
+                case 4:
+                    ans.value = "April Month has 30 days";
+                    break;
+
+                case 5:
+                    ans.value = "May Month has 31 days";
+                    break;
+                
+                case 6:
+                    ans.value = "June Month has 30 days";
+                    break;
+
+                case 7:
+                    ans.value = "July Month has 31 days";
+                    break;
+
+                case 8:
+                    ans.value = "August Month has 31 days";
+                    break;
+
+                case 9:
+                    ans.value = "September Month has 30 days";
+                    break;
+
+                case 10:
+                    ans.value = "October Month has 31 days";
+                    break;
+
+                case 11:
+                    // ans.value = "31 days";
+                    document.getElementById("ans").innerText = "November Month has 30 days";
+                    break;
+
+                case 12:
+                    document.getElementById("ans").innerText = "December Month has 31 days";
+                    break;
+
+                default:
+                    ans.value = "Invalid month number"
+            }
+        }
+    </script>
+</body>
+</html>
