@@ -1,0 +1,51 @@
+<!-- 
+Write a 'JavaScript' program to take user Id as 1001 and Password as 1010. Ask the user to enter his id, 
+if the id is valid then ask the user to enter his password. 
+If the password is correct then display a message as "Welcome back!!". 
+If the password is incorrect then display a message as "Incorrect password".
+If the user id is invalid then display a message as "User not found". Use switch statement.  
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example3</title>
+</head>
+<body>
+    <h3>User Login usig prompt</h3>
+   
+        <script>
+           
+                const userId = 1001;
+                const password = 1010;
+               
+                let userIdInput = parseInt(prompt("Enter User ID"));
+                switch(userIdInput){
+                    case userId:
+                        alert("User match");
+                        let count=0;
+                        let chance=3;
+                        let pass = parseInt(prompt("Enter password: "));
+                       
+                            switch (password) {
+                                case pass:
+                                    alert("Welcome back!!");
+                                    count=5;
+                                    break;
+
+                                default:
+                                    count++;
+                                    alert("Incorrect password");
+                            }
+                        
+                        break;
+
+                    default:
+                        alert("User not found");
+                }
+            
+        </script>
+</body>
+</html>
