@@ -1,0 +1,65 @@
+<!-- 
+Write a 'JavaScript' program to perform a arithmetic operation on two numbers by using Switch Case.  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example2</title>
+</head>
+<body style="text-align: center;">
+    <h3>Perform Arithmetic Operations on 2 numbers</h3>
+    <div>
+        <label for="n1">Enter num1: </label>
+        <input type="text" id="num1" name="n1" placeholder="Number1" required>
+        <br> <br>
+        <label for="n2">Enter num2: </label>
+        <input type="text" id="num2" name="n2" placeholder="Enter number2" required>
+        <br> <br>
+        <label for="op">Enter Operation: </label>
+        <input type="text" id="opr" name="op" placeholder="ex.(+,-,*,/,%)" required>
+        <br><br>
+        <button type="submit" onclick="calculate()">Submit</button>
+    </div>
+    <br>
+    <Output id="result"></Output>
+
+    <script>
+        function calculate()
+        {
+            let number1 = +document.getElementById("num1").value;
+            let number2 = +document.getElementById("num2").value;
+            let operation = document.getElementById("opr").value;
+
+            result.value = operation;
+
+            switch(operation){
+                case "+":
+                    document.getElementById("result").innerHTML = `Addition of ${number1} and ${number2} is : ${number1+number2}`;
+                    break;
+
+                case "-":
+                    document.getElementById("result").innerHTML = `Substraction of ${number1} and ${number2} is : ${number1 - number2}`;
+                    break;
+
+                case "*":
+                    document.getElementById("result").innerHTML = `Multiplication of ${number1} and ${number2} is : ${number1 * number2}`;
+                    break;
+
+                case "/":
+                    document.getElementById("result").innerHTML = `Division of ${number1} and ${number2} is : ${number1 / number2}`;
+                    break;
+
+                case "%":
+                    document.getElementById("result").innerHTML = `Modulus of ${number1} and ${number2} is : ${number1 % number2}`;
+                    break;
+
+                default:
+                    document.getElementById("result").innerText = "Invalid Operation";
+            }
+        }
+    </script>
+</body>
+</html>
