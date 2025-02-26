@@ -1,0 +1,154 @@
+Que 1 :
+=======
+
+Write a simple 'JavaScript' program that reads an integer from the user and prints the multiplication table of the given number using a while loop.
+
+Example :
+
+Sample input : N = 7
+
+Sample output :
+
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+.....
+.....
+7 x 10 = 70
+
+============================================================
+
+Que 2 :
+=======
+
+Write a 'JavaScript' program that reads a positive integer N from the user and calculates the sum of even and odd numbers between 1 and N using a while loop. 
+The program should print the sum of even numbers and the sum of odd numbers.
+
+NOTE : If user entered negative input then print "Invalid Input" message.
+
+
+Example_1 :
+
+Sample input  : N = -10;
+
+Sample output : Invalid Input
+
+---------------------
+
+Example_2 :
+
+Sample input  : N = 10;
+
+Sample output : even sum => 30 
+                odd sum  => 25
+
+============================================================
+
+Que 3 :
+=======
+
+Write a 'JavaScript' program that reads an integer from the user and prints the count of digits in the given number. 
+The program should handle both positive and negative numbers if the number is negative it should print 'negative number' and if the number is zero it should print 'zero'.
+
+Example :
+
+Sample input1  : 12348
+Sample output1 : 5
+
+Sample input1  : 0
+Sample output1 : zero
+
+Sample input1  : -1
+Sample output1 : negative number
+============================================================
+
+Que 4 :
+=======
+
+Write 'JavaScript' program to reverse a number using while 
+
+Sample input  : Enter a number : 12345
+Sample output : Reverse : 54321
+
+============================================================
+
+Que 5 :
+======
+
+Write a 'JavaScript' program to calculate the factorial of a given positive integer. 
+The program should prompt the user to enter a number, compute its factorial, and display the result. 
+-> If the user enters a negative number, the program should display an error message: "Invalid input...Please enter a positive integer."
+-> If the input is 0, the program should print Factorial of 0 = 1 because by definition, 0!=1
+-> FORMULA => n!=1×2×3×...×n.
+
+Sample input  : Enter a positive integer: -5
+Sample output : Invalid input...Please enter a positive integer.
+
+Sample input  : Enter a positive integer: 5
+Sample output : Factorial of 5 = 120
+
+
+============================================================
+
+Que 6 :
+=======
+	Write a JavaScript program to print all Nth digit prime numbers :
+	
+	Description :
+		if user enter 2 as a input the program should print all 2 digit prime numbers.
+
+	Sample Input : 
+		Enter a Number : 1 
+	Sample Output : All 1 digits prime numbers are : 2 3 5 7
+
+	Sample Input :
+		Enter a Number : 2
+	Sample Output : All 2 digits prime numbers are : 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+
+===========================================================================================================================================
+
+Que 7 :
+=======
+	Write a JavaScript program to print all Nth digit Armstrong numbers :
+	
+	Definition :
+		Armstrong numbers are special numbers that are equal to the sum of their digits raised to the power of the number of digits. 
+	
+	Description :
+		if user enter 3 as a input the program should print all 3 digit Armstrong numbers.
+
+	Sample Input : 
+		Enter a Number : 1
+	Sample Output : All 1 digits Armstrong numbers are : 1 2 3 4 5 6 7 8 9
+
+	Sample Input :
+		Enter a Number : 3
+	Sample Output : All 3 digits Armstrong numbers are : 153 370 371 407
+
+==========================================================================================================================================
+	
+
+Que 8 :
+=======
+
+(USING FOR LOOP) Write 'JavaScript' program to check given number is Disarium Number or not.
+
+Disarium Number :
+A number is a Disarium number if the sum of the digits powered with their respective positions is equal to the number itself.
+For example:
+
+Sample input  : 89
+Sample output : 89 is a Disarium number.
+Explanation   : 89:> 8^1 + 9^2 = 89
+
+Sample input  : 175
+Sample output : 175 is a Disarium number.
+Explanation   : 175:> 1^1 + 7^2 + 5^3 = 175
+
+Sample input  : 45
+Sample output : 45 is NOT a Disarium number
+Explanation   : 45:> 4^1 + 5^2 = 29
+
+
+=========================================================================================================================================
