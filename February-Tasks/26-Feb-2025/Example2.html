@@ -1,0 +1,47 @@
+<!-- 
+Write a 'JavaScript' program that reads a positive integer N from the user and calculates
+the sum of even and odd numbers between 1 and N using a while loop.  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2</title>
+</head>
+<body style="text-align: center;">
+
+    <h3>Even Odd Sum of N numbers</h3>
+    <div class="input">
+        <label for="number">Enter N Number: </label>
+        <input type="text" id="number" required placeholder="Enter number">
+        <button onclick="evenoddSum()">Submit</button>
+        <br> <br>
+        <Output id="result"></Output>
+    </div>
+    
+    <script>
+        function evenoddSum() {
+                let num = +document.getElementById("number").value;
+                let result = document.getElementById("result");
+                let evenSum = 0;
+                let oddSum = 0;
+                if (num < 0) {
+                    result.innerText = "Invalid Input";
+                    return;
+                } else {
+                    while (num) {
+                        if (num % 2 == 0) {
+                            evenSum += num;
+                        } else {
+                            oddSum += num;
+                        }
+                        num--;
+                    }
+                }
+                result.innerHTML = `<b>Sum of Even & Odd numbers</b><br>even sum => ${evenSum}<br>odd sum => ${oddSum}<br>`;
+            }
+    </script>
+</body>
+</html>
