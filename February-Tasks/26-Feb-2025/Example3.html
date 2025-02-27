@@ -1,0 +1,44 @@
+<!-- 
+Write a 'JavaScript' program that reads an integer from the user and prints the count 
+of digits in the given number.  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 3</title>
+</head>
+<body style="text-align: center;">
+    <h3>Count Number of Digits in a Number</h3>
+    <div class="input">
+        <label for="number">Enter Number: </label>
+        <input type="text" id="number" placeholder="enter number" required>
+        <button onclick="digitCount()">Submit</button>
+        <br><br>
+        <Output id="result"></Output>
+    </div>
+    <script>
+        function digitCount() {
+                let num = +document.getElementById("number").value;
+                let tempNum = num;
+                let result = document.getElementById("result");
+                let digit = 0;
+                if (num < 0) {
+                    result.innerText = "Negative Number";
+                    return;
+                } else if (num == 0) {
+                    result.innerText = "zero";
+                    return;
+                } else {
+                    while (num) {
+                        digit++;
+                        num = Math.floor(num / 10);
+                    }
+                }
+                result.innerHTML = `<b>Total digits count</b><br>Total count of digits in ${tempNum} is ${digit}<br>`;
+            }
+    </script>
+</body>
+</html>
