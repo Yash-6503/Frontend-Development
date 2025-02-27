@@ -1,0 +1,38 @@
+<!-- 
+Write a simple 'JavaScript' program that reads an integer from the user and prints the 
+multiplication table of the given number using a while loop.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 1</title>
+</head>
+<body style="text-align: center;">
+    <h3>Multiplication Table</h3>
+    <div class="table">
+        <label for="number">Enter Number: </label>
+        <input type="text" id="number" required placeholder="Enter number">
+        
+        <button type="submit" onclick="printTable()">Submit</button>
+        <br> <br>
+        <Output id="result"></Output>
+
+        <script>
+            function printTable(){
+                let tableCount = 1;
+                let number = document.getElementById("number").value;
+                let result = document.getElementById("result");
+                result.innerHTML = "";
+                result.innerHTML = `<b>Multiplication Table of ${number}</b><br>`;
+                while(tableCount <= 10){
+                   result.innerHTML += `${number} x ${tableCount} = ${number * tableCount}<br>`;
+                    tableCount++;
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
