@@ -1,0 +1,160 @@
+Que 1 :
+--------
+	Write a 'JavaScript' program to store and print the employees data using Objects.
+
+	Explanation :
+		-> create an object named EmployeeDetails = {}
+		-> store the employee details like Name, Address, Designation, salary 
+		-> print the data in console.
+
+	Sample input : 
+		-> Enter the name of the employee : john
+		-> Enter address : Hyderabad
+		-> Enter designation : Developer
+		-> Enter salary : 20000
+	
+	Expected Output : 
+		Employee Name : john
+		Address : Hyderabad
+		Designation : Developer
+		Salary : 20000
+
+
+==================================================================================================================================
+
+Que 2 :
+---------
+	Write a 'JavaScript' program to store and print the books data using for in loop.
+
+	Explanation :
+		-> create an object named BookDetails = {}
+		-> store the employee details like title, author, year
+		-> print the data in console.
+
+	Sample input : 
+		-> Enter the book title: "Eloquent JavaScript"
+		-> Enter name of the author: "Marijn Haverbeke"
+		-> Enter year: 2018
+		
+	
+	Expected Output : 
+		title: "Eloquent JavaScript"
+   		author: "Marijn Haverbeke"
+    		year: 2018
+
+==================================================================================================================================
+
+Que 3 :
+---------
+	Write a 'JavaScript' program to update the employee information stored in objects.
+
+	Explanation : 
+		-> create an object named EmployeeDetails = {}
+		-> store the employee details like Name, Address, Designation, salary 
+		-> update the designation and salary of the employee
+		-> print the updated data in console.
+
+	Sample input : 
+		-> Enter the name of the employee : john
+		-> Enter address : Hyderabad
+		-> Enter designation : Developer
+		-> Enter salary : 20000
+	
+	Expected Output : 
+		Employee Name : john
+		Address : Hyderabad
+		Designation : software engineer
+		Salary : 30000
+
+
+==================================================================================================================================
+
+que 4 :
+--------
+	Write a 'JavaScript' program to print the employee information using get function.
+
+	Explanation : 
+		-> create an object named EmployeeDetails = {}
+		-> store the employee details like Name, Address, Designation, salary, getName()(functional expression returns employee name)
+		-> update the designation and salary of the employee
+		-> print the updated data in console.
+
+	Sample input : 
+		-> Enter the name of the employee : john
+		-> Enter address : Hyderabad
+		-> Enter designation : Developer
+		-> Enter salary : 20000
+	
+	Expected Output : 
+		Employee Name : john
+		
+
+==================================================================================================================================
+
+que 5 :
+--------
+	Write a 'JavaScript' program to print the employee information using set function.
+
+	Explanation : 
+		-> create an object named EmployeeDetails = {}
+		-> store the employee details like Name, Address, Designation, salary, setSalary(sal)(functional expression to update employee salary)
+		-> update the designation and salary of the employee
+		-> print the updated data in console.
+
+	Sample input : 
+		-> Enter the name of the employee : john
+		-> Enter address : Hyderabad
+		-> Enter designation : Developer
+		-> Enter salary : 20000
+	
+	Expected Output : 
+		updated salary : 30000
+		
+=======================================================================================================
+
+Arrays 
+--------
+
+
+Que 1 : 
+--------
+	write a 'JavaScript' program to Sort the array [45, 3, 25, 78, 12] in ascending and descending order using predefined method.
+
+Que 2 :
+--------
+	Write a 'JavaScript' program to Separate Strings and Numbers and print array using the forEach method.
+
+Que 3 :
+-------
+	Write a 'JavaScript' program to Filter Even and Odd Numbers from array in separate arrays using predefined method.
+
+Que 4 :
+--------
+	Write a 'JavaScript' program to create an array of 10 image names an display the images on the webpage using forEach method.
+
+Que 5 :
+--------
+	Write a 'JavaScript' program to print Sum of All array elements using predefined method.
+
+Que 6 :
+--------
+	Write a 'JavaScript' program Convert Names to Uppercase in array using predefined method.
+
+
+Que 7 :
+--------
+	Write a 'JavaScript' program to Remove Null and Undefined Values from array using predefined method.
+
+
+Que 8 :
+--------
+	Write a 'JavaScript' program to Calculate Average from an Array elements.
+	sample input : const nums = [10, 20, 30, 40, 50];
+	output : 30
+
+Que 9 :
+--------
+	Write a 'JavaScript' program to Flatten a Nested Array.
+
+	sample input : const nestedArray = [1, [2, [3, [4, 5]]]];
+	output : [1, 2, 3, 4, 5]
