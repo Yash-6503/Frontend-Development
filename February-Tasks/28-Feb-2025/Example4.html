@@ -1,0 +1,102 @@
+<!-- Write a 'JavaScript' program to print the employee information using get function. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example 4</title>
+    </head>
+
+    <body>
+        <h3>Employee Form</h3>
+        <form action="">
+            <div class="name">
+                <label for="name">Enter Employee Name: </label>
+                <input type="text" placeholder="enter name" id="name" required>
+            </div> <br> <br>
+            <div class="addr">
+                <label for="address">Enter Employee Address: </label>
+                <input type="text" placeholder="enter address" id="address" required>
+            </div><br> <br>
+            <div class="role">
+                <label for="desig">Enter Employee Designation: </label>
+                <input type="text" placeholder="enter designation" id="desig" required>
+            </div><br> <br>
+            <div class="salary">
+                <label for="sal">Enter Employee Salary: </label>
+                <input type="text" placeholder="enter salary" id="sal" required>
+            </div><br> <br>
+        </form>
+        <button type="submit" onclick="printData()">Submit</button>
+        <br> <br>
+
+        <h3>Update Employee</h3>
+        <form action="">
+            <div class="role">
+                <label for="udesig">Enter Employee Designation: </label>
+                <input type="text" placeholder="enter designation" id="udesig" required>
+            </div><br> <br>
+            <div class="salary">
+                <label for="usal">Enter Employee Salary: </label>
+                <input type="text" placeholder="enter salary" id="usal" required>
+            </div><br> <br>
+        </form>
+        <button type="submit" onclick="updateData()">Submit</button>
+        <br><br>
+        <Output id="result"></Output>
+
+
+        <script>
+            document.getElementsByTagName("body")[0].style.textAlign = "center";
+
+            let empName;
+            let empAddress;
+            let empDesig;
+            let empSalary;
+            let EmployeeDetails;
+
+            function printData() {
+
+                empName = document.getElementById("name").value;
+                empAddress = document.getElementById("address").value;
+                empDesig = document.getElementById("desig").value;
+                empSalary = +document.getElementById("sal").value;
+
+                EmployeeDetails = { empName, empAddress, empDesig, empSalary };
+
+                // console.log(EmployeeDetails);
+               console.log("Employee Name : " + getName() + "\nEmployee Address : " + getAddress() + "\nEmployee Designation : " + getDesig() + "\nEmployee Salary : " + getSalary());
+
+                let result = document.getElementById("result");
+                result.innerHTML = `<b>Employee Details</b><br>Employee Name : ${getName()}<br>Employee Address : ${getAddress()}<br>Employee Designation : ${getDesig()}<br>Employee Salary : ${getSalary()}<br>`;    
+            }
+
+            function updateData() {
+                empDesig = document.getElementById("udesig").value;
+                empSalary = +document.getElementById("usal").value;
+
+                EmployeeDetails = { empName, empAddress, empDesig, empSalary };
+                console.log("Employee Name : " + getName() + "\nEmployee Address : " + getAddress() + "\nEmployee Designation : " + getDesig() + "\nEmployee Salary : " + getSalary());
+
+                let result = document.getElementById("result");
+                result.innerHTML = `<b>Employee Details</b><br>Employee Name : ${getName()}<br>Employee Address : ${getAddress()}<br>Employee Designation : ${getDesig()}<br>Employee Salary : ${getSalary()}<br>`;
+            }
+
+            function getName(){
+                return empName;
+            }
+            function getAddress(){
+                return empAddress;
+            }
+            function getDesig(){
+                return empDesig;
+            }
+            function getSalary(){
+                return empSalary;
+            }
+        </script>
+    </body>
+
+</html>
