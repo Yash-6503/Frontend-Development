@@ -1,0 +1,52 @@
+<!-- Write a 'JavaScript' program to store and print the books data using for in loop. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example 2</title>
+    </head>
+
+    <body>
+        <h3>Employee Form</h3>
+        <form action="">
+            <div class="name">
+                <label for="Tname">Enter Book Title: </label>
+                <input type="text" placeholder="enter title name" id="Tname" required>
+            </div> <br> <br>
+            <div class="author">
+                <label for="author">Enter Author Name: </label>
+                <input type="text" placeholder="enter author name" id="author" required>
+            </div><br> <br>
+            <div class="year">
+                <label for="year">Enter Release Year: </label>
+                <input type="text" placeholder="enter year" id="year" required>
+            </div><br> <br>
+        </form>
+        <button type="submit" onclick="printData()">Submit</button>
+        <br> <br>
+        <Output id="result"></Output>
+
+
+        <script>
+            document.getElementsByTagName("body")[0].style.textAlign = "center";
+            function printData() {
+
+                let bookTitle = document.getElementById("Tname").value;
+                let bookAuthor = document.getElementById("author").value;
+                let bookYear = +document.getElementById("year").value;
+
+                let bookDetails = { bookTitle, bookAuthor, bookYear };
+
+                // console.log(EmployeeDetails);
+                console.log("Book Title : " + bookDetails.bookTitle + "\nBook Author : " + bookDetails.bookAuthor  + "\nBook Year : " + bookDetails.bookYear);
+
+                let result = document.getElementById("result");
+                result.innerHTML = `<b>Book Details</b><br>Book Title : ${bookTitle}<br>Book Author : ${bookAuthor}<br>Book Year : ${bookYear}<br>`;
+            }
+        </script>
+    </body>
+
+</html>
