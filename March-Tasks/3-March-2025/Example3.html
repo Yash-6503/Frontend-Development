@@ -1,0 +1,74 @@
+<!-- 
+Create a shopping list where users can add and remove items. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example3</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Shopping Cart</h2>
+    <div class="container">
+        <div class="ip">
+            <input type="text" placeholder="enter item name" id="items">
+        </div>
+        <br>
+        <div class="operations">
+            <button type="submit" onclick="addItem()">Add</button>
+            <button type="submit" onclick="deleteItem()">Delete</button>
+            <button type="submit" onclick="displayItem()">Display</button>
+        </div>
+        <br>
+        <div class="answer">
+            <Output id="res"></Output>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+        function addItem(){
+            let item = document.getElementById("items");
+            let inputValue = item.value.trim();
+
+            if(inputValue !== ""){
+                cart.push(inputValue);
+                item.value = "";
+                document.getElementById("res").innerText = "Item added successfully to cart";
+            }else{
+                alert("please enter item to add");
+            }
+        }
+
+        function deleteItem(){
+            let item = document.getElementById("items");
+            let ipValue = item.value.trim();
+
+            if (ipValue !== "") {
+                let num = cart.indexOf(ipValue);
+                let position = parseInt(num, 10);
+
+                if (position >= 0 && position < cart.length) {
+                    cart.splice(position, 1); // Delete 1 item at the given position
+                    document.getElementById("res").innerText = "Item deleted successfully!";
+                } else {
+                    alert("Invalid position! Enter a valid index.");
+                }
+            } else {
+                alert("Please enter a valid index to delete.");
+            }
+        }
+
+        function displayItem(){
+            document.getElementById("res").textContent = cart.join(", ");
+        }
+    </script>
+</body>
+</html>
