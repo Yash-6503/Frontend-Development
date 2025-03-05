@@ -1,0 +1,46 @@
+<!-- Write 'JavaScript' program to reverse a number using while  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example 4</title>
+    </head>
+
+    <body style="text-align: center;">
+        <h3>Reverse Number</h3>
+        <div class="input">
+            <label for="number">Enter Number: </label>
+            <input type="text" id="number" placeholder="enter number" required>
+            <button onclick="reverseNumber()">Submit</button>
+            <br><br>
+            <Output id="result"></Output>
+        </div>
+        <script>
+            function reverseNumber() {
+                    let num = +document.getElementById("number").value;
+                    let tempNum = num;
+                    let result = document.getElementById("result");
+                    let digit = 0;
+                    let rev = 0;
+                    if (num < 0) {
+                        result.innerText = "Negative Number";
+                        return;
+                    } else if (num == 0) {
+                        result.innerText = "zero";
+                        return;
+                    } else {
+                        while (num) {
+                            digit = num % 10;
+                            rev = rev * 10 + digit;
+                            num = Math.floor(num / 10);
+                        }
+                    }
+                    result.innerHTML = `<b>Reversed number</b><br>Reverse of ${tempNum} is ${rev}<br>`;
+                }
+        </script>
+    </body>
+
+</html>
