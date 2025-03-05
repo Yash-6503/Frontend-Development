@@ -1,0 +1,65 @@
+<!-- 
+Create a page where users can change the background color by clicking buttons. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example4</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Background color changer</h2>
+    <div class="container">
+        <button onclick="redColor()" id="red" value="red">Red</button>
+        <button onclick="greenColor()" id="green" value="green">Green</button>
+        <button onclick="yellowColor()" id="yellow" value="yellow">Yellow</button>
+        <button onclick="blueColor()" id="blue" value="blue">Blue</button>
+        <button onclick="pinkColor()" id="pink" value="pink">Pink</button>
+        <button onclick="orangeColor()" id="orange" value="orange">Orange</button>
+    </div>
+
+    <script>
+        function redColor(){
+            // let btn = document.getElementsByTagName("body");
+            // let colorName = document.getElementById("red").value;
+            document.getElementsByTagName("body")[0].style.backgroundColor = "red";
+        }
+
+        function yellowColor(){
+            let btn = document.getElementsByTagName("body");
+            let colorName = document.getElementById("yellow").value;
+            btn[0].style.backgroundColor = colorName;
+        }
+
+        function greenColor(){
+            let btn = document.getElementsByTagName("body");
+            let colorName = document.getElementById("green").value;
+            btn[0].style.backgroundColor = colorName;
+        }
+
+        function blueColor(){
+            let btn = document.getElementsByTagName("body");
+            let colorName = document.getElementById("blue").value;
+            btn[0].style.backgroundColor = colorName;
+        }
+
+        function pinkColor(){
+            let btn = document.getElementsByTagName("body");
+            let colorName = document.getElementById("pink").value;
+            btn[0].style.backgroundColor = colorName;
+        }
+        function orangeColor(){
+            let btn = document.getElementsByTagName("body");
+            let colorName = document.getElementById("orange").value;
+            btn[0].style.backgroundColor = colorName;
+        }
+    </script>
+</body>
+</html>
