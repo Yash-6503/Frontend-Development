@@ -1,0 +1,49 @@
+<!-- 
+A basic quiz program where users select answers and get feedback on whether they are correct. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example2</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Quiz Application</h2>
+    <div class="container">
+        <div class="question">
+            <label>Which is the Object Oriented Programming Language?</label>
+        </div>
+        <br>
+        <div class="options">
+            <button type="submit" onclick="wrongAnswer()">PHP</button>
+            <button type="submit" onclick="wrongAnswer()">C</button>
+            <button type="submit" onclick="correctAnswer()">JAVA</button>
+            <button type="submit" onclick="wrongAnswer()">SQL</button>
+        </div>
+        <br>
+        <div class="answer">
+            <Output id="res"></Output>
+        </div>
+    </div>
+
+    <script>
+        let result =  document.getElementById("res");
+        function wrongAnswer(){
+           result.innerText = "Wrong Answer!!";
+           result.style.color = "red";
+        }
+
+        function correctAnswer(){
+            result.innerText = "Correct Answer!!";
+            result.style.color = "green";
+        }
+    </script>
+</body>
+</html>
