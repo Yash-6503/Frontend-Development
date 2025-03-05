@@ -1,0 +1,43 @@
+<!-- 
+Write a 'JavaScript' program to calculate the factorial of a given positive integer. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 5</title>
+</head>
+<body style="text-align: center;">
+    <h3>Factorial of Number</h3>
+    <div class="input">
+        <label for="number">Enter Number: </label>
+        <input type="text" id="number" placeholder="enter number" required>
+        <button onclick="findFactorial()">Submit</button>
+        <br><br>
+        <Output id="result"></Output>
+    </div>
+    <script>
+        function findFactorial() {
+                let num = +document.getElementById("number").value;
+                let tempNum = num;
+                let result = document.getElementById("result");
+                let sum = 1;
+                if (num < 0) {
+                    result.innerText = "Invalid input...Please enter a positive integer.";
+                    return;
+                } else if (num == 0) {
+                    result.innerText = "Factorial of 0 = 1";
+                    return;
+                } else {
+                    while (num) {
+                        sum *= num;
+                        num--;
+                    }
+                }
+                result.innerHTML = `Factorial of ${tempNum} = ${sum}<br>`;
+            }
+    </script>
+</body>
+</html>
